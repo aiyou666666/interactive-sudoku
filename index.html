@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table { width: 300px; height: 300px; border: 1px solid #000; }
+        td { border: 1px solid #000; width: 33.333333%; text-align: center; font-size: 30px; }
+        td.active { background: #ccc; }
+    </style>
+</head>
+<body>
+
+    <!-- 设置好 data-index 九宫格转的顺序 从0开始 -->
+    <table>
+        <tr>
+            <td data-index="0">瓜子</td>
+            <td data-index="1">香蕉</td>
+            <td data-index="2">苹果</td>
+        </tr>
+        <tr>
+            <td data-index="7">草莓</td>
+            <td><button>开始</button></td>
+            <td data-index="3">波萝</td>
+        </tr>
+        <tr>
+            <td data-index="6">橘子</td>
+            <td data-index="5">荔枝</td>
+            <td data-index="4">山楂</td>
+        </tr>
+    </table>
+
+    <script src="js/seajs/sea.js"></script>
+    <script src="js/seajs/seajs-config.js"></script>
+    <script>
+        seajs.use('app/view-index');
+    </script>
+
+</body>
+</html>
